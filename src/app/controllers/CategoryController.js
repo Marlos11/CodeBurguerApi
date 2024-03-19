@@ -37,7 +37,7 @@ class CategoryControler {
 
             return response.json({ id, name })
         } catch (err) {
-
+           
         }
     }
     async index(request, response) {
@@ -82,7 +82,7 @@ class CategoryControler {
             }
 
             await Category.update({ name, path },
-                {where:{id}})
+                { where: { id } })
 
             return response.status(200).json()
         } catch (err) {
