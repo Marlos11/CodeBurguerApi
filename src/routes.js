@@ -1,7 +1,7 @@
 
 // aqui importamos de dentro do express o Router que é uma classe que nos auxiliara na criação das rotas. 
 
-import { Router } from 'express'
+import { Router, response } from 'express'
 import UserContoller from './app/controllers/UserContoller'
 import SessionsController from './app/controllers/SessionsController'
 import ProductsController from './app/controllers/ProductsController'
@@ -15,7 +15,11 @@ import multerConfig from '../src/config/multer'
 
 
 // aqui é nossa variavel que guardara nossa class Router instanciada para que possamos criar nossas rotas.
-const routes = new Router()
+const routes = new Router() 
+
+routes.get('/',(request,response)=>{
+    return response.json({message:'hello'})
+})
 
 const upload = multer(multerConfig)
 // criamos a primeira rota com o methodo get que apenas nos retorna um hello word. 
