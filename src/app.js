@@ -1,5 +1,6 @@
 
 import express from 'express'
+import cors from 'cors'
 import routes from './routes'
 import { resolve } from 'path'
 import './database'
@@ -11,6 +12,7 @@ import './database'
 class App {
     constructor() {
         this.app = express()
+        this.app.use(cors())
 
         this.middlwares()
         this.routes()

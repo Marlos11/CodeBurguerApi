@@ -44,7 +44,7 @@ class UserController {
         })
 
         if(findEmailUser){
-            return response.status(400).json({message:"E-mail already registered"})
+            return response.status(409).json({message:"E-mail already registered"})
         }
         
         const user = await User.create(
