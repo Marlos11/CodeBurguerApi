@@ -10,16 +10,15 @@ module.exports = {
 
   async down(queryInterface, Sequelize) {
 
-    await queryInterface.addColumn('Products', 'category',
-      Sequelize.STRING
+    await queryInterface.addColumn('Products', 'category',{
+      type:Sequelize.STRING,
+      allowNull:true
 
 
-    /*  {
-      category: {
-        type: Sequelize.STRING,
-        allowNull: false
-      }
-    } */);
+    })
+
+
+   
 
   }
 };

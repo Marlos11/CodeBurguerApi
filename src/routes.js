@@ -21,6 +21,7 @@ routes.get('/',(request,response)=>{
     return response.json({message:'hello'})
 })
 
+
 const upload = multer(multerConfig)
 // criamos a primeira rota com o methodo get que apenas nos retorna um hello word. 
 

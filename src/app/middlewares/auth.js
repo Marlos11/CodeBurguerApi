@@ -34,11 +34,14 @@ export default (request, response, next) => {
             // criamos uma propriedade dentro do nosso request que sera o id do usuario. 
             request.userId = decoded.id
             request.userName = decoded.name
+        
+            return next()
         })
+
     } catch (error) {
         return response.status(401).json({ error: 'token is invalid' })
     }
 
-    return next()
+    
 
 }

@@ -22,8 +22,8 @@ class Database {
     mongo() {
         this.mongoConnection = mongoose.connect('mongodb://localhost:27017/codeburguer',
             {
-                 useNewUrlParser: true,
-                 useUnifiedTopology: true  
+              /*    useNewUrlParser: true,
+                 useUnifiedTopology: true   */
             })
     }
 }

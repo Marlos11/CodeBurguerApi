@@ -26,9 +26,9 @@ class SessionsController {
         if (!user) checkPasswordOrEmail()
 
 
-        if (!(await user.checkPassword(password))) checkPasswordOrEmail()
-
-        /*      return response.json(user) */
+         if (!(await user.checkPassword(password))) checkPasswordOrEmail()
+ 
+         /*  return response.json(user)   */
 
         return response.json({
             id: user.id,

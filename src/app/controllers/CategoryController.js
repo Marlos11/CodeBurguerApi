@@ -10,7 +10,7 @@ class CategoryControler {
                 name: Yup.string().required()
             })
             try {
-                await schema.validateSync(request.body, { abortEarly: false })
+                schema.validateSync(request.body, { abortEarly: false })
             } catch (err) {
                 return response.status(400).json({ error: err.erros })
             }
@@ -33,11 +33,14 @@ class CategoryControler {
             if (categoryExists) {
                 return response.status(400).json({ error: 'category already exists' })
             }
-            const { id } = await Category.create({ name, path })
+            const { id } = await Category.create({
+                name,
+                path
+            })
 
-            return response.json({ id, name })
+            return response.status(201).json({ id, name })
         } catch (err) {
-           
+
         }
     }
     async index(request, response) {
@@ -53,7 +56,7 @@ class CategoryControler {
                 name: Yup.string()
             })
             try {
-                await schema.validateSync(request.body, { abortEarly: false })
+                 schema.validateSync(request.body, { abortEarly: false })
             } catch (err) {
                 return response.status(400).json({ error: err.erros })
             }
