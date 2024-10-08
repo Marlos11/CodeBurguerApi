@@ -41,12 +41,12 @@ routes.put('/products/:id', upload.single('file'), ProductsController.update)
 
 //end routes products 
 
-//routes categories
-routes.post('/categories', upload.single('file'), CategoryController.store)
-routes.get('/categories', CategoryController.index)
-routes.put('/categories/:id', upload.single('file'), CategoryController.update)
+//routes categorys
+routes.post('/categorys', upload.single('file'), CategoryController.store)
+routes.get('/categorys', CategoryController.index)
+routes.put('/categorys/:id', upload.single('file'), CategoryController.update)
 
-//end routes categories
+//end routes categorys
 
 //routes orders
 routes.post('/orders', OrderController.store)

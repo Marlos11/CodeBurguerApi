@@ -15,15 +15,15 @@ class Database {
         this.mongo()
     }
     init() {
-        this.connection = new Sequelize(configDataBase)
+        this.connection = new Sequelize('postgresql://postgres:yHermoNvIgYSxeelkIFejUAKayukSKkE@junction.proxy.rlwy.net:40432/railway')
         models.map((model) => model.init(this.connection)).map(model => model.associate && model.associate(this.connection.models)) 
     }
 
     mongo() {
-        this.mongoConnection = mongoose.connect('mongodb://localhost:27017/codeburguer',
+        this.mongoConnection = mongoose.connect('mongodb://mongo:ISltnxhtgHdcNogWnZnswXNJhUFzwusq@junction.proxy.rlwy.net:59516',
             {
-              /*    useNewUrlParser: true,
-                 useUnifiedTopology: true   */
+                useNewUrlParser: true,
+                 useUnifiedTopology: true   
             })
     }
 }

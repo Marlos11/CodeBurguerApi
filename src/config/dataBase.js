@@ -1,14 +1,14 @@
 module.exports = {
     dialect: 'postgres',
-    /*  url: 'postgresql://postgres:EPUzKAqqLcMCzssytlsOBbupDSjrzdqn@viaduct.proxy.rlwy.net:35443/railway', */
+     url: 'postgresql://postgres:yHermoNvIgYSxeelkIFejUAKayukSKkE@junction.proxy.rlwy.net:40432/railway',
 
-    host: 'localhost',
-    username: 'postgres',
-    password: 'postgres',
-    database: 'codeburguerapi',
-    define: {
-        timespamps: true,
-        underscored: true,
-        underscoredAll: true
-    }
+     define: {
+         timespamps: true,
+         underscored: true,
+         underscoredAll: true
+         /*  host: 'localhost',
+          username: 'postgres',
+          password: 'postgres',
+          database: 'codeburguerapi', */
+        }
 }
