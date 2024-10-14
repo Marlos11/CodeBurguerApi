@@ -6,7 +6,7 @@ import UserContoller from './app/controllers/UserContoller.js'
 import SessionsController from './app/controllers/SessionsController.js'
 import ProductsController from './app/controllers/ProductsController.js'
 import CategoryController from './app/controllers/CategoryController.js'
-import OrderController from './app/controllers/OrderController'
+import OrderController from './app/controllers/OrderController.js'
 
 import authMiddleware from './app/middlewares/auth.js'
 
