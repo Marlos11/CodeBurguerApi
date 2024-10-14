@@ -1,6 +1,6 @@
 import Sequelize from "sequelize";
 import User from '../app/models/User'
-import mongoose from 'mongoose'
+/* import mongoose from 'mongoose' */
 
 /* import configDataBase from '../config/dataBase'
  */import Products from "../app/models/Products";
