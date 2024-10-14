@@ -2,16 +2,16 @@
 // aqui importamos de dentro do express o Router que é uma classe que nos auxiliara na criação das rotas. 
 
 import { Router, response } from 'express'
-import UserContoller from './app/controllers/UserContoller'
-import SessionsController from './app/controllers/SessionsController'
-import ProductsController from './app/controllers/ProductsController'
-import CategoryController from './app/controllers/CategoryController'
+import UserContoller from './app/controllers/UserContoller.js'
+import SessionsController from './app/controllers/SessionsController.js'
+import ProductsController from './app/controllers/ProductsController.js'
+import CategoryController from './app/controllers/CategoryController.js'
 import OrderController from './app/controllers/OrderController'
 
-import authMiddleware from './app/middlewares/auth'
+import authMiddleware from './app/middlewares/auth.js'
 
 import multer from 'multer'
-import multerConfig from '../src/config/multer'
+import multerConfig from '../src/config/multer.js'
 
 
 // aqui é nossa variavel que guardara nossa class Router instanciada para que possamos criar nossas rotas.
