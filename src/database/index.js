@@ -2,8 +2,8 @@ import Sequelize from "sequelize";
 import User from '../app/models/User'
 import mongoose from 'mongoose'
 
-import configDataBase from '../config/dataBase'
-import Products from "../app/models/Products";
+/* import configDataBase from '../config/dataBase'
+ */import Products from "../app/models/Products";
 import Category from "../app/models/Category";
 import mongoose from "mongoose";
 

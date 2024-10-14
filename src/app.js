@@ -3,7 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import routes from './routes.js'
 import { resolve } from 'path'
-import './database'
+import './database/index.js'
 
 // aqui temos nossa classe que executa tudo que esta dentro do nosso contructor,
 // informamos que iremos usaro express = this.app = express()
