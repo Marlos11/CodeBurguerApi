@@ -3,7 +3,7 @@
 import jwt from 'jsonwebtoken'
 
 
-import authConfig from '../../config/auth'
+import authConfig from '../../config/auth.js'
 
 
 //  aqui estamos verificando se o token que o usuario esta nos enviando é valido
