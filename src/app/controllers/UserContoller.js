@@ -16,7 +16,7 @@ delete() => deletar
 
 import { v4 } from "uuid";
 import * as Yup from 'yup'
-import User from "../models/User";
+import User from "../models/User.js";
 
 class UserController {
     async store(request, response) {

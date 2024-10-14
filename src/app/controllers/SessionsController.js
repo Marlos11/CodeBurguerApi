@@ -1,7 +1,7 @@
 import * as Yup from 'yup'
 import jwt from 'jsonwebtoken'
-import User from '../models/User'
-import configAuth from '../../config/auth'
+import User from '../models/User.js'
+import configAuth from '../../config/auth.js'
 
 
 class SessionsController {
