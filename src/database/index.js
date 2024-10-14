@@ -3,8 +3,8 @@ import User from '../app/models/User.js'
 /* import mongoose from 'mongoose' */
 
 /* import configDataBase from '../config/dataBase'
- */import Products from "../app/models/Products";
-import Category from "../app/models/Category";
+ */import Products from "../app/models/Products.js";
+import Category from "../app/models/Category.js";
 import mongoose from "mongoose";
 
 const models = [User, Products, Category]
